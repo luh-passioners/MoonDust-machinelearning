@@ -3,3 +3,4 @@ path
 .env
 redditscraper
 __pycache__
+keys.py
