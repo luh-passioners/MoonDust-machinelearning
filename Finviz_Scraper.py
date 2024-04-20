@@ -4,6 +4,7 @@ from SentimentAnalyze import analyze
 from Summerizer import summerizer
 from keys import CLAUDE_API_KEY
 from bs4 import BeautifulSoup
+from IBD50_Tickers import get_tickers
 
 
 class NewsScraper:
@@ -101,7 +102,8 @@ def analyze_news(ticker_links):
         print(ticker, sum/count)
 
 # Usage
-tickers = ['AMZN', 'AMD']
+tickers = get_tickers()
+
 scraper = NewsScraper(tickers)
 scraper.scrape_news()
 
