@@ -24,5 +24,5 @@ def summerizer(Article):
             }
         ]
     )
-    print(message.content)
+    #print(message.content)
     return str(message.content)
