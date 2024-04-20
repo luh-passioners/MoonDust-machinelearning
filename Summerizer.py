@@ -3,7 +3,7 @@ import anthropic
 client = anthropic.Anthropic(
     # defaults to os.environ.get("ANTHROPIC_API_KEY")
     api_key="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",
-)
+) 
 
 def summerizer(Article):
     message = client.messages.create(
