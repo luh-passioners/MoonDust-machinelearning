@@ -2,6 +2,7 @@ import ssl
 from urllib.request import Request, urlopen
 from SentimentAnalyze import analyze 
 from Summerizer import summerizer
+from keys import CLAUDE_API_KEY
 from bs4 import BeautifulSoup
 
 
@@ -91,10 +92,13 @@ def analyze_news(ticker_links):
                 print("Error fetching data for ticker", ticker)
                 print(e)
 
+        sum = 0
+        count = 0
         for val in content_string:
-            print(ticker, analyze(summerizer(val)))
-
-
+            count += 1 
+            sum += analyze(summerizer(val))
+        
+        print(ticker, sum/count)
 
 # Usage
 tickers = ['AMZN', 'AMD']
