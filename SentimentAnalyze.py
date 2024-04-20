@@ -18,8 +18,13 @@ def analyze(text):
     tokenizer = AutoTokenizer.from_pretrained(MODEL)
     model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
-    encoded_text = tokenizer(text, truncation=True, return_tensors='pt', max_length=45)
+    #encoded_text = tokenizer(text, truncation=True, return_tensors='pt', max_length=45)
    # encoded_text = tokenizer(text, return_tensors='pt', padding=True, truncation=True)
+
+    tokenizer = AutoTokenizer.from_pretrained(MODEL)  # Use the same MODEL variable
+    encoded_text = tokenizer(text, truncation=True, return_tensors='pt', max_length=512)
+
+
     output = model(**encoded_text)
     scores = output[0][0].detach().numpy()
     scores = softmax(scores)
