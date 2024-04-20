@@ -2,3 +2,4 @@ transformers
 path
 .env
 redditscraper
+__pycache__
