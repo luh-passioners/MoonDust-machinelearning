@@ -15,7 +15,6 @@ def analyze(text):
 
     #Roberta model from huggingface transformer pipeline
     MODEL = f"cardiffnlp/twitter-roberta-base-sentiment"
-    tokenizer = AutoTokenizer.from_pretrained(MODEL)
     model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
     #encoded_text = tokenizer(text, truncation=True, return_tensors='pt', max_length=45)
@@ -34,7 +33,6 @@ def analyze(text):
         'roberta_pos' : scores[2]
     }
     return -scores[0] + scores[2]
-    print(scores_dict)
 
 
 

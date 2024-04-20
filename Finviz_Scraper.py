@@ -1,6 +1,7 @@
 import ssl
 from urllib.request import Request, urlopen
 from SentimentAnalyze import analyze 
+from Summerizer import summerizer
 from bs4 import BeautifulSoup
 
 
@@ -37,22 +38,23 @@ class NewsParser:
         self.news_data = news_data
 
     def parse_news_links(self):
-        """Parses news links and headlines for each ticker"""
         sorted_news_data = []
         ticker_links = {}
         for ticker, news_data in self.news_data.items():
-            news_links = []
+            unique_links = set()  # Store unique links to avoid duplicates
             for row in news_data.findAll('tr'):
-                if len(news_links) > 5:
+                if len(unique_links) > 4:
                     break
                 if row.a:
                     title = row.a.text.strip()
                     link = row.a["href"]
                 else:
                     title = "No headline found"
+                #if link not in unique_links:  # Check for unique link before adding
+                unique_links.add(link)
                 sorted_news_data.append([ticker, title, link])
-                news_links.append(link)
-            ticker_links[ticker] = news_links
+                    #news_links.append(link)
+            ticker_links[ticker] = unique_links
         return sorted_news_data, ticker_links
 
 
@@ -73,21 +75,25 @@ def text_from_html(body):
 
 def analyze_news(ticker_links):
     """Fetches news content and performs sentiment analysis"""
-    text = []
+    text = set()
+    content_string = []
     for ticker in ticker_links:
         for link in ticker_links[ticker]:
+            text.add(link)
             ticker_link = link
             html = Request(url=ticker_link, headers={'user-agent': 'my-app'})
             try:
                 response = urlopen(html, context=ssl._create_unverified_context())
                 content = response.read()
                 content = text_from_html(content)
-                text.append(content)
+                content_string.append(content)
             except Exception as e:
                 print("Error fetching data for ticker", ticker)
                 print(e)
-    for val in text:
-        print(analyze(val))
+
+        for val in content_string:
+            print(ticker, analyze(summerizer(val)))
+
 
 
 # Usage
