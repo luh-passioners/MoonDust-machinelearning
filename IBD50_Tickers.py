@@ -25,7 +25,7 @@ def get_tickers():
                 html = BeautifulSoup(content, 'html.parser')
                 tickers = []
                 for anchor in html.find_all('a', class_='text-decoration-underline', target='_blank', href=True):
-                    print("Found anchor:", anchor)  # For debugging (optional)
+                    print("Found anchor:", anchor) 
                     text = anchor.text.strip()
                     if text:
                         ticker = text.split(" - ")[0].strip()
