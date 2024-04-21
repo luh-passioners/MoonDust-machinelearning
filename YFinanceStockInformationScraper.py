@@ -2,8 +2,6 @@ import yfinance as yf
 import numpy as np
 from IBD50_Tickers import get_tickers
 
-stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
-
 def __init__(self):
     # Call get_tickers from Class1 to get the list of tickers
     self.stock_tickers = get_tickers()
