@@ -5,8 +5,10 @@ import random
 headers = ['Transaction id', 'amount', 'merchant id', 'sector in company', 'day in month']
 
 # Generate random data for the CSV file
-def generate_random_data():
-    transaction_id = random.randint(1, 10000)  # Increased max ID for more entries
+
+
+def generate_random_data(min, max):
+    transaction_id = random.randint(1, 10000)  
     amount = f'${random.randint(50, 1000)}.00'
     merchant_id = random.choice(['amazon', 'testing', 'google cloud', 'aws'])
     sector = random.choice(['hardware', 'r&d', 'swe', 'marketing'])

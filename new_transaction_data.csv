@@ -1,5 +1,5 @@
 Transaction id,amount,merchant id,sector in company,day in month
-9758,$240.00,amazon,marketing,21
+9758,$5000.00,amazon,marketing,21
 478,$552.00,amazon,r&d,25
 3880,$318.00,testing,hardware,14
 7235,$647.00,testing,r&d,25
