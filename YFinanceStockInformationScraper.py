@@ -1,5 +1,14 @@
 import yfinance as yf
 import numpy as np
+from IBD50_Tickers import get_tickers
+
+stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
+
+def __init__(self):
+    # Call get_tickers from Class1 to get the list of tickers
+    self.stock_tickers = get_tickers()
+
+stock_tickers = get_tickers()
 
 def calculate_current_price(ticker_symbol):
     """
@@ -35,7 +44,7 @@ def get_20_day_sma(ticker_symbol):
     
     # Check if there is enough data for SMA calculation
     if len(historical_data) < 21:
-        return None
+        return 0
     
     # Calculate SMA
     sma_20 = historical_data["Close"].mean()
@@ -63,7 +72,7 @@ def get_50_day_sma(ticker_symbol):
     
     # Check if there is enough data for SMA calculation
     if len(historical_data) < 51:
-        return None
+        return 0
     
     # Calculate SMA
     sma_50 = historical_data["Close"].mean()
@@ -117,7 +126,11 @@ def get_roe(ticker_symbol):
     # Get ROE
     roe = company_info.get("returnOnEquity", "N/A")
     
-    return round(roe, 2) if roe != "N/A" else "N/A"
+    if isinstance(roe, str) and roe == "N/A":
+        return 0
+    else:
+        return round(float(roe), 2)
+
 
 def get_profit_margin(ticker_symbol):
     """
@@ -136,7 +149,11 @@ def get_profit_margin(ticker_symbol):
     # Get Profit Margin
     profit_margin = company_info.get("profitMargins", "N/A")
     
-    return round(profit_margin * 100, 2) if profit_margin != "N/A" else "N/A"
+    if isinstance(profit_margin, str) and profit_margin == "N/A":
+        return 0
+    else:
+        return round(float(profit_margin) * 100, 2)
+
 
 def get_pe_ratio(ticker_symbol):
     """
@@ -155,7 +172,11 @@ def get_pe_ratio(ticker_symbol):
     # Get P/E ratio
     pe_ratio = company_info.get("trailingPE", "N/A")
     
-    return round(pe_ratio, 2) if pe_ratio != "N/A" else "N/A"
+    if isinstance(pe_ratio, str) and pe_ratio == "N/A":
+        return 0
+    else:
+        return round(float(pe_ratio), 2)
+
 
 def get_eps(ticker_symbol):
     """
@@ -174,7 +195,11 @@ def get_eps(ticker_symbol):
     # Get EPS
     eps = company_info.get("trailingEps", "N/A")
     
-    return round(eps, 2) if eps != "N/A" else "N/A"
+    if isinstance(eps, str) and eps == "N/A":
+        return 0
+    else:
+        return round(float(eps), 2)
+
 
 def get_rsi(ticker_symbol, period=14):
     """
@@ -192,7 +217,7 @@ def get_rsi(ticker_symbol, period=14):
     historical_data = stock_data.history(period=f"{period+1}d")
     
     if len(historical_data) <= period:
-        return None
+        return 0
     
     # Calculate price changes
     delta = historical_data['Close'].diff(1)
@@ -260,7 +285,7 @@ def calculate_stochastic_oscillator(ticker_symbol, period=14, smoothing=3):
         historical_data = stock_data.history(period=f"{period+smoothing}d")
         
         if len(historical_data) < period + smoothing:
-            return None
+            return 0
         
         # Calculate %K line
         low_min = historical_data['Low'].rolling(window=period).min()
@@ -276,7 +301,7 @@ def calculate_stochastic_oscillator(ticker_symbol, period=14, smoothing=3):
         return current_stochastic_oscillator
     except Exception as e:
         print(f"Error calculating Stochastic Oscillator for {ticker_symbol}: {e}")
-        return None
+        return 0
 
 
 
@@ -308,11 +333,6 @@ def print_stock_info(ticker_symbol):
     print("\n")
 
 
-# List of stock tickers
-stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
-
-# testing under here
-# print_stock_info("GOOG")
 
 # Initialize a dictionary to store stock scores
 stock_scores = {}
