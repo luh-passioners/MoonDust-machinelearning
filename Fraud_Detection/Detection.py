@@ -72,8 +72,13 @@ new_transaction_encoded = new_transaction[["Transaction id", "amount", "merchant
 
 new_prediction = model.predict(new_transaction_encoded)
 new_score = model.decision_function(new_transaction_encoded)
-print(new_score)
+#print(new_score)
 
 
+#positive_scores = pd.DataFrame({'Transaction id': new_transaction_encoded['Transaction id'][new_score > 0], 'Anomaly Score': new_score[new_score > 0]})
+negative_scores = pd.DataFrame({'Transaction id': new_transaction_encoded['Transaction id'][new_score <= 0], 'Anomaly Score': new_score[new_score <= 0]})
 
+# Print results (adjust based on your needs)
+print("Transactions with negative anomaly scores (likely fraudulent:")
+print(negative_scores['Transaction id'].to_string(index=False))
 
