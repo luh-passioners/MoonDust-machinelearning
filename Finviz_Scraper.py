@@ -79,6 +79,9 @@ def text_from_html(body):
 def analyze_news(ticker_links):
     text = set()
     content_string = []
+
+    ticker_score_map = {}
+
     for ticker in ticker_links:
         for link in ticker_links[ticker]:
             
@@ -106,15 +109,18 @@ def analyze_news(ticker_links):
             count += 1 
             sum += analyze(summerizer(val))
         
-        print(ticker, sum/count)
+        ticker_score_map[ticker] = sum / count
+
+    return ticker_score_map
 
 
-tickers = get_tickers()
+# analyze_news returns -1 to 1
+# tickers = get_tickers()
 
-scraper = NewsScraper(tickers)
-scraper.scrape_news()
+# scraper = NewsScraper(tickers)
+# scraper.scrape_news()
 
-parser = NewsParser(scraper.news_data)
-sorted_news_data, ticker_links = parser.parse_news_links()
+# parser = NewsParser(scraper.news_data)
+# sorted_news_data, ticker_links = parser.parse_news_links()
 
-analyze_news(ticker_links)  
+# analyze_news(ticker_links)  
