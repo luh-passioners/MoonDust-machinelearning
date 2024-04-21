@@ -7,6 +7,8 @@ client = anthropic.Anthropic(
 ) 
 
 def summerizer(Article):
+    if not Article.strip():
+        return "There seems to be no text to summarize"
     message = client.messages.create(
         model="claude-3-haiku-20240307",
         max_tokens=1000,
