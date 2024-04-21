@@ -25,14 +25,14 @@ def get_stock_prices(symbol, start_date, end_date):
             prices.append((date, price))
     return prices
 
-def main():
-    symbol = input("Enter stock symbol: ")
-    start_date = input("Enter start date (YYYY-MM-DD): ")
-    end_date = datetime.now().strftime('%Y-%m-%d')
+# def main():
+#     symbol = input("Enter stock symbol: ")
+#     start_date = input("Enter start date (YYYY-MM-DD): ")
+#     end_date = datetime.now().strftime('%Y-%m-%d')
 
-    prices = get_stock_prices(symbol, start_date, end_date)
-    for point in prices:
-        print(point)
+#     prices = get_stock_prices(symbol, start_date, end_date)
+#     for point in prices:
+#         print(point)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
