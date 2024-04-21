@@ -17,7 +17,8 @@ def generate_random_data():
 num_entries = 1000
 
 # Generate and write the data with some outliers
-with open('/Users/marvinlin/Python-Learning/new_transaction_data.csv', mode='w', newline='') as file:
+
+with open('../new_transaction_data.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(headers)  # Write the headers
     for _ in range(num_entries):
