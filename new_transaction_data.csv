@@ -6,7 +6,7 @@ Transaction id,amount,merchant id,sector in company,day in month
 3282,$696.00,testing,r&d,8
 3067,$10000.00,unkown,hardware,28
 5687,$184.00,aws,r&d,19
-8081,$840.00,testing,r&d,4
+8081,$840.00,testing,r&d,
 6448,$50.00,google cloud,hardware,4
 3717,$736.00,testing,swe,27
 5675,$948.00,testing,marketing,16
