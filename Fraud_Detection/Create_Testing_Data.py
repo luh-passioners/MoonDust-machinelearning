@@ -5,34 +5,26 @@ import random
 headers = ['Transaction id', 'amount', 'merchant id', 'sector in company', 'day in month']
 
 # Generate random data for the CSV file
-def generate_random_data(merchant_ranges):
-    transaction_id = random.randint(1, 10000)  # Increased max ID for more entries
 
-    merchant_id = random.choice(list(merchant_ranges.keys()))  # Get random key from dict
-    merchant_id = random.choice(list(merchant_ranges.keys()))  # Get random key from dict
-    min_amount, max_amount = merchant_ranges[merchant_id]  # Access min/max for chosen merchant
-    amount = f"${random.randint(min_amount * 100, max_amount * 100) / 100:.2f}"
+
+def generate_random_data(min, max):
+    transaction_id = random.randint(1, 10000)  
+    amount = f'${random.randint(50, 1000)}.00'
+    merchant_id = random.choice(['amazon', 'testing', 'google cloud', 'aws'])
     sector = random.choice(['hardware', 'r&d', 'swe', 'marketing'])
     day_in_month = random.randint(1, 30)
     return [transaction_id, amount, merchant_id, sector, day_in_month]
 
 # Number of entries to generate
-num_entries = 10000
-
-merchant_ranges = {
-  'amazon': (100, 1000),
-  'testing': (20, 50),
-  'google cloud': (200, 2000),
-  'aws': (600, 2000)
-}
-
+num_entries = 1000
 
 # Generate and write the data with some outliers
-with open('..transaction_data.csv', mode='w', newline='') as file:
+
+with open('../new_transaction_data.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(headers)  # Write the headers
     for _ in range(num_entries):
-        data = generate_random_data(merchant_ranges)
+        data = generate_random_data()
 
         # Introduce outliers occasionally (adjust probability as needed)
         if random.random() < 0.05:  # 5% chance of an outlier

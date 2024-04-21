@@ -12,8 +12,12 @@ def scrape_for_board(ticker):
         if response.status_code == 200:
             data = json.loads(response.text)
             # Extract and print the "boardurl" values as strings
-            first_boardurl = data[0]["boardurl"]
-            return str(first_boardurl)
+            try:
+                first_boardurl = data[0]["boardurl"]
+                return str(first_boardurl)
+            except Exception as e:
+                print(e)
+
         else:
             print(response, 'Failed to retrieve data from the website.')
             print(response.reason)

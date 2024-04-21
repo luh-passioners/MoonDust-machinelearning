@@ -1,2 +1,1001 @@
 Transaction id,amount,merchant id,sector in company,day in month
-8381,$23452546.00,aws,hardware,8
+9758,$5000.00,amazon,marketing,21
+478,$552.00,amazon,r&d,25
+3880,$318.00,testing,hardware,14
+7235,$647.00,testing,r&d,25
+8537,$134.00,testing,r&d,26
+8739,$156.00,google cloud,marketing,28
+3548,$598.00,aws,marketing,17
+1297,$979.00,amazon,marketing,18
+3414,$527.00,testing,marketing,17
+4589,$535.00,aws,hardware,5
+2526,$376.00,google cloud,swe,22
+7464,$324.00,testing,r&d,22
+9709,$442.00,google cloud,r&d,18
+4050,$504.00,aws,swe,27
+5349,$268.00,aws,r&d,5
+8906,$608.00,testing,hardware,28
+6149,$533.00,testing,marketing,15
+5978,$51.00,aws,r&d,28
+7249,$361.00,amazon,r&d,21
+8887,$959.00,amazon,hardware,7
+735,$10000.00,unkown,marketing,25
+6425,$856.00,testing,marketing,14
+4477,$856.00,testing,hardware,26
+9288,$800.00,amazon,hardware,16
+5080,$794.00,testing,hardware,5
+8058,$740.00,google cloud,hardware,2
+1109,$633.00,google cloud,hardware,6
+5477,$193.00,testing,swe,4
+2520,$220.00,amazon,marketing,7
+7361,$936.00,google cloud,r&d,9
+7567,$381.00,google cloud,hardware,3
+3900,$584.00,amazon,r&d,3
+2354,$724.00,amazon,swe,5
+6380,$389.00,amazon,marketing,2
+4279,$967.00,testing,r&d,27
+3214,$537.00,aws,marketing,3
+6190,$561.00,amazon,r&d,11
+6039,$105.00,testing,r&d,12
+5310,$150.00,aws,hardware,1
+5341,$656.00,amazon,marketing,22
+6177,$924.00,amazon,hardware,14
+1626,$400.00,aws,swe,2
+4821,$441.00,amazon,marketing,16
+766,$696.00,google cloud,swe,27
+7586,$10000.00,unkown,r&d,4
+4816,$380.00,aws,swe,6
+581,$507.00,amazon,marketing,23
+1258,$162.00,amazon,hardware,29
+7131,$509.00,amazon,marketing,3
+4260,$361.00,testing,swe,8
+5994,$563.00,google cloud,hardware,8
+3346,$772.00,amazon,marketing,2
+1618,$972.00,google cloud,marketing,4
+5489,$863.00,google cloud,r&d,9
+2557,$594.00,amazon,swe,13
+9876,$310.00,aws,marketing,23
+1672,$935.00,aws,hardware,26
+7119,$110.00,aws,swe,5
+3467,$565.00,aws,swe,20
+9136,$259.00,testing,r&d,14
+5468,$394.00,testing,swe,4
+2874,$733.00,amazon,marketing,29
+9043,$492.00,aws,r&d,30
+359,$915.00,testing,r&d,24
+7489,$424.00,testing,marketing,9
+3554,$642.00,aws,hardware,7
+7834,$445.00,aws,hardware,15
+2538,$278.00,aws,r&d,6
+4709,$371.00,aws,hardware,25
+2308,$921.00,testing,swe,23
+666,$285.00,amazon,marketing,6
+2517,$755.00,amazon,swe,23
+8671,$916.00,aws,hardware,30
+3992,$305.00,testing,swe,17
+6974,$848.00,google cloud,hardware,21
+4456,$51.00,aws,r&d,9
+2364,$853.00,amazon,r&d,28
+3803,$129.00,aws,hardware,19
+908,$999.00,testing,hardware,30
+6490,$859.00,aws,hardware,22
+4958,$239.00,amazon,marketing,6
+4359,$328.00,testing,swe,25
+9393,$958.00,aws,swe,5
+7095,$67.00,aws,hardware,22
+7139,$353.00,amazon,marketing,28
+4790,$293.00,google cloud,marketing,21
+5117,$234.00,testing,swe,19
+8474,$54.00,amazon,marketing,24
+7760,$125.00,amazon,hardware,25
+7987,$816.00,google cloud,hardware,16
+5377,$771.00,aws,marketing,21
+3356,$476.00,testing,marketing,28
+4963,$420.00,testing,swe,26
+5072,$245.00,amazon,marketing,16
+6511,$177.00,google cloud,hardware,23
+4957,$61.00,aws,swe,9
+7913,$812.00,testing,swe,30
+6281,$892.00,aws,r&d,20
+1429,$467.00,amazon,r&d,8
+7409,$201.00,amazon,swe,16
+9814,$173.00,aws,hardware,27
+4540,$731.00,google cloud,swe,7
+2596,$810.00,testing,swe,26
+5262,$882.00,google cloud,marketing,24
+4295,$593.00,google cloud,hardware,12
+8565,$272.00,aws,marketing,22
+2834,$659.00,aws,marketing,12
+3056,$10000.00,unkown,marketing,18
+1983,$859.00,amazon,hardware,12
+1632,$775.00,amazon,swe,2
+5665,$103.00,aws,r&d,27
+9443,$966.00,aws,marketing,14
+7427,$484.00,amazon,marketing,5
+7191,$679.00,amazon,hardware,6
+165,$550.00,google cloud,hardware,9
+3317,$587.00,amazon,marketing,20
+477,$912.00,amazon,marketing,20
+2312,$301.00,aws,hardware,13
+267,$10000.00,unkown,marketing,1
+2756,$158.00,google cloud,swe,11
+4874,$697.00,testing,hardware,22
+5807,$354.00,amazon,r&d,9
+2692,$551.00,google cloud,r&d,22
+4035,$815.00,amazon,r&d,18
+7929,$413.00,aws,r&d,9
+4000,$252.00,aws,swe,23
+7440,$598.00,amazon,marketing,13
+4796,$748.00,aws,marketing,18
+2953,$591.00,testing,marketing,28
+157,$888.00,google cloud,swe,29
+5489,$523.00,amazon,r&d,27
+7924,$910.00,testing,marketing,15
+1429,$137.00,testing,marketing,28
+2361,$117.00,testing,swe,25
+1417,$573.00,aws,r&d,30
+2743,$627.00,google cloud,hardware,4
+2584,$583.00,testing,swe,6
+8186,$537.00,testing,hardware,24
+7929,$563.00,google cloud,hardware,14
+7558,$545.00,amazon,r&d,25
+2387,$737.00,testing,r&d,29
+9733,$10000.00,unkown,marketing,4
+5032,$73.00,amazon,r&d,17
+3815,$157.00,aws,marketing,3
+13,$547.00,amazon,swe,25
+1207,$846.00,testing,swe,11
+476,$775.00,google cloud,hardware,30
+2846,$602.00,aws,swe,27
+731,$317.00,google cloud,hardware,23
+2116,$389.00,testing,hardware,29
+4066,$889.00,aws,swe,7
+3015,$84.00,google cloud,swe,28
+7904,$803.00,testing,hardware,27
+5952,$713.00,google cloud,swe,18
+2709,$116.00,testing,marketing,2
+5417,$423.00,aws,hardware,4
+8360,$435.00,amazon,marketing,10
+3904,$57.00,amazon,hardware,23
+1244,$840.00,google cloud,marketing,5
+8841,$573.00,google cloud,r&d,8
+1182,$320.00,google cloud,hardware,9
+4662,$838.00,aws,marketing,3
+3816,$748.00,aws,swe,19
+485,$104.00,google cloud,hardware,5
+2850,$944.00,amazon,r&d,12
+1701,$269.00,testing,marketing,23
+8888,$586.00,aws,swe,25
+9962,$451.00,amazon,marketing,7
+9347,$10000.00,unkown,swe,13
+5720,$143.00,aws,hardware,4
+1762,$500.00,aws,swe,18
+1279,$144.00,testing,swe,3
+8170,$786.00,google cloud,swe,26
+8575,$383.00,google cloud,r&d,20
+8603,$131.00,testing,hardware,2
+9788,$777.00,aws,hardware,3
+9549,$246.00,testing,swe,19
+2077,$122.00,amazon,r&d,16
+9250,$629.00,amazon,r&d,3
+1566,$642.00,amazon,swe,12
+1398,$146.00,testing,hardware,5
+763,$766.00,testing,r&d,24
+6470,$179.00,testing,marketing,6
+425,$890.00,google cloud,swe,3
+1192,$133.00,testing,marketing,29
+9609,$623.00,amazon,swe,15
+3358,$10000.00,unkown,swe,24
+1549,$358.00,amazon,hardware,5
+3946,$592.00,aws,swe,15
+251,$790.00,amazon,r&d,30
+2632,$10000.00,unkown,marketing,12
+3822,$170.00,google cloud,swe,7
+5855,$502.00,google cloud,r&d,22
+2539,$263.00,aws,swe,24
+2214,$229.00,amazon,r&d,4
+6064,$617.00,google cloud,hardware,14
+3859,$728.00,testing,hardware,10
+8137,$459.00,google cloud,r&d,29
+2672,$290.00,testing,swe,9
+3072,$10000.00,unkown,marketing,19
+2056,$271.00,amazon,marketing,27
+8733,$835.00,google cloud,marketing,28
+6911,$904.00,testing,r&d,19
+9296,$429.00,google cloud,marketing,7
+7059,$869.00,amazon,swe,7
+3262,$666.00,amazon,r&d,13
+4113,$859.00,amazon,marketing,27
+6101,$101.00,google cloud,r&d,16
+2424,$616.00,amazon,swe,23
+2390,$114.00,amazon,swe,1
+8400,$164.00,amazon,marketing,13
+3107,$162.00,google cloud,hardware,2
+2575,$526.00,google cloud,swe,20
+1536,$305.00,amazon,hardware,21
+6772,$90.00,amazon,marketing,21
+2063,$428.00,testing,r&d,17
+5167,$553.00,aws,hardware,19
+5849,$962.00,aws,r&d,2
+2960,$871.00,testing,marketing,24
+1646,$410.00,amazon,marketing,18
+9041,$598.00,aws,marketing,8
+7787,$363.00,google cloud,r&d,27
+117,$501.00,testing,swe,15
+2912,$988.00,testing,hardware,11
+7665,$496.00,google cloud,r&d,26
+6446,$205.00,testing,swe,3
+6963,$956.00,amazon,r&d,18
+7800,$10000.00,unkown,r&d,19
+2885,$132.00,google cloud,hardware,11
+5849,$322.00,aws,marketing,30
+3658,$957.00,testing,r&d,5
+6316,$674.00,aws,hardware,16
+4102,$620.00,aws,hardware,17
+3528,$193.00,aws,marketing,15
+1273,$130.00,google cloud,r&d,23
+7845,$10000.00,unkown,r&d,5
+4523,$956.00,amazon,marketing,24
+6776,$281.00,aws,hardware,2
+2901,$726.00,amazon,hardware,4
+3326,$627.00,testing,marketing,28
+2552,$796.00,google cloud,swe,27
+6294,$738.00,aws,hardware,12
+8689,$983.00,google cloud,r&d,22
+5976,$985.00,testing,hardware,3
+1914,$61.00,testing,r&d,13
+9738,$885.00,aws,swe,26
+3127,$144.00,aws,marketing,7
+9733,$305.00,amazon,swe,6
+4065,$227.00,aws,hardware,10
+4432,$410.00,aws,marketing,27
+2767,$652.00,aws,marketing,22
+6458,$719.00,aws,marketing,27
+4537,$276.00,amazon,r&d,8
+4588,$916.00,aws,r&d,24
+3357,$471.00,google cloud,swe,20
+1908,$706.00,google cloud,r&d,24
+3143,$841.00,aws,hardware,22
+9287,$182.00,google cloud,hardware,30
+8113,$984.00,aws,r&d,27
+3608,$365.00,google cloud,hardware,16
+7265,$147.00,aws,marketing,20
+8973,$268.00,google cloud,swe,28
+8164,$10000.00,unkown,swe,11
+8807,$865.00,testing,marketing,7
+6844,$326.00,google cloud,swe,23
+4773,$10000.00,unkown,hardware,4
+9045,$54.00,amazon,marketing,1
+3149,$372.00,testing,r&d,29
+7384,$336.00,amazon,marketing,5
+5886,$623.00,google cloud,r&d,26
+911,$10000.00,unkown,swe,27
+5589,$76.00,testing,marketing,3
+3359,$586.00,amazon,marketing,27
+2051,$437.00,testing,marketing,19
+1856,$156.00,amazon,swe,1
+6158,$426.00,amazon,marketing,17
+2538,$390.00,testing,r&d,19
+6913,$526.00,amazon,hardware,10
+4675,$472.00,aws,marketing,7
+6379,$309.00,amazon,swe,24
+3368,$467.00,amazon,swe,13
+8480,$997.00,aws,marketing,12
+1006,$436.00,aws,swe,3
+2016,$224.00,testing,hardware,26
+1315,$399.00,aws,r&d,22
+9101,$449.00,testing,hardware,9
+9013,$578.00,google cloud,r&d,21
+1604,$98.00,aws,swe,27
+6631,$944.00,aws,swe,6
+3146,$466.00,testing,hardware,11
+1149,$406.00,testing,r&d,24
+2737,$376.00,testing,r&d,16
+5208,$99.00,amazon,hardware,5
+9019,$134.00,amazon,hardware,17
+5814,$387.00,testing,hardware,13
+2417,$978.00,testing,swe,8
+4580,$71.00,testing,hardware,20
+3351,$399.00,amazon,marketing,25
+1570,$378.00,aws,marketing,15
+2783,$498.00,aws,r&d,15
+6247,$777.00,google cloud,r&d,1
+8517,$174.00,amazon,r&d,9
+8986,$388.00,google cloud,marketing,25
+4031,$130.00,google cloud,swe,15
+9383,$98.00,aws,swe,6
+2422,$215.00,aws,swe,23
+8924,$277.00,aws,hardware,12
+5870,$160.00,amazon,swe,22
+454,$188.00,amazon,marketing,23
+3377,$140.00,aws,marketing,6
+559,$772.00,google cloud,swe,24
+2748,$618.00,testing,r&d,27
+365,$90.00,aws,swe,25
+8666,$596.00,google cloud,marketing,5
+1144,$630.00,google cloud,r&d,9
+9752,$587.00,amazon,swe,30
+3128,$60.00,aws,swe,20
+6789,$501.00,testing,hardware,28
+4838,$205.00,testing,marketing,4
+2455,$181.00,amazon,hardware,23
+5018,$494.00,aws,hardware,9
+7016,$10000.00,unkown,marketing,9
+2130,$751.00,aws,hardware,1
+8792,$930.00,google cloud,swe,1
+3896,$677.00,aws,r&d,19
+144,$404.00,aws,hardware,19
+7776,$925.00,aws,hardware,20
+784,$10000.00,unkown,swe,24
+649,$556.00,testing,marketing,18
+2995,$246.00,aws,r&d,19
+6289,$801.00,amazon,r&d,10
+2461,$69.00,amazon,hardware,21
+6828,$256.00,amazon,hardware,22
+750,$932.00,amazon,r&d,2
+7479,$844.00,google cloud,r&d,11
+8841,$238.00,google cloud,hardware,16
+1145,$857.00,testing,r&d,1
+7665,$852.00,google cloud,swe,21
+4546,$860.00,google cloud,r&d,7
+3812,$634.00,google cloud,hardware,3
+2984,$330.00,amazon,marketing,14
+6548,$289.00,amazon,swe,13
+3244,$480.00,testing,swe,24
+388,$104.00,aws,hardware,28
+6768,$657.00,google cloud,hardware,14
+3324,$885.00,aws,hardware,10
+6525,$875.00,google cloud,r&d,25
+782,$397.00,amazon,hardware,18
+7741,$818.00,aws,r&d,29
+3041,$997.00,amazon,hardware,9
+5342,$189.00,aws,marketing,21
+8095,$747.00,amazon,hardware,8
+517,$130.00,testing,hardware,18
+6805,$411.00,testing,hardware,20
+5871,$174.00,google cloud,swe,19
+4487,$256.00,google cloud,swe,18
+7133,$585.00,testing,hardware,7
+9203,$900.00,testing,r&d,30
+7450,$545.00,testing,swe,25
+3905,$500.00,aws,marketing,10
+3496,$824.00,aws,r&d,2
+4119,$305.00,google cloud,r&d,15
+6810,$462.00,aws,hardware,1
+1401,$667.00,amazon,swe,3
+3473,$222.00,testing,marketing,23
+547,$420.00,aws,swe,12
+6247,$304.00,testing,swe,19
+9281,$837.00,testing,hardware,27
+1488,$558.00,google cloud,r&d,10
+5520,$10000.00,unkown,swe,15
+2635,$612.00,testing,r&d,13
+8434,$658.00,testing,hardware,29
+8880,$134.00,aws,hardware,2
+3890,$74.00,amazon,hardware,22
+5198,$328.00,google cloud,swe,4
+5081,$387.00,google cloud,r&d,8
+3400,$333.00,google cloud,marketing,2
+5928,$980.00,aws,r&d,8
+7309,$10000.00,unkown,swe,4
+4557,$489.00,google cloud,marketing,9
+633,$912.00,aws,hardware,18
+5844,$717.00,google cloud,marketing,14
+8600,$714.00,testing,marketing,14
+2514,$609.00,amazon,marketing,22
+1247,$913.00,aws,marketing,24
+3414,$870.00,amazon,swe,26
+5571,$626.00,aws,swe,15
+7886,$259.00,testing,marketing,20
+2305,$966.00,google cloud,hardware,11
+6474,$610.00,amazon,hardware,19
+545,$349.00,google cloud,hardware,14
+9948,$780.00,aws,hardware,10
+7834,$719.00,testing,hardware,20
+3654,$208.00,amazon,r&d,20
+1909,$723.00,google cloud,swe,5
+7312,$187.00,google cloud,r&d,14
+1984,$536.00,testing,hardware,4
+3844,$371.00,amazon,r&d,22
+683,$543.00,testing,hardware,11
+49,$313.00,amazon,r&d,24
+4900,$342.00,aws,marketing,13
+1254,$160.00,testing,hardware,14
+3148,$218.00,aws,swe,2
+5660,$443.00,aws,swe,29
+2075,$820.00,amazon,r&d,12
+7637,$731.00,google cloud,hardware,8
+1759,$315.00,amazon,swe,19
+4366,$823.00,amazon,swe,5
+6674,$10000.00,unkown,hardware,18
+7908,$558.00,amazon,hardware,20
+9270,$821.00,google cloud,swe,18
+4183,$834.00,testing,r&d,29
+6645,$490.00,google cloud,r&d,13
+2355,$10000.00,unkown,marketing,12
+4645,$278.00,amazon,r&d,22
+6799,$10000.00,unkown,hardware,10
+7299,$419.00,testing,swe,19
+1409,$95.00,aws,swe,27
+8534,$405.00,google cloud,hardware,17
+6506,$369.00,testing,swe,23
+9897,$189.00,google cloud,swe,13
+1565,$857.00,testing,hardware,23
+9542,$912.00,testing,r&d,28
+359,$219.00,google cloud,hardware,22
+5158,$67.00,google cloud,hardware,27
+1405,$375.00,testing,r&d,14
+5287,$759.00,google cloud,hardware,7
+5033,$543.00,amazon,marketing,26
+5562,$711.00,testing,r&d,17
+8545,$465.00,google cloud,swe,26
+5123,$734.00,amazon,hardware,11
+6171,$93.00,aws,hardware,9
+329,$10000.00,unkown,hardware,29
+1150,$810.00,aws,swe,26
+1682,$300.00,aws,swe,29
+9035,$979.00,google cloud,marketing,19
+1722,$576.00,aws,marketing,29
+8096,$254.00,amazon,hardware,15
+8037,$742.00,google cloud,marketing,15
+3229,$684.00,testing,swe,24
+7528,$283.00,testing,marketing,17
+2358,$10000.00,unkown,marketing,26
+664,$902.00,amazon,swe,20
+5641,$836.00,amazon,marketing,29
+1044,$834.00,google cloud,marketing,29
+782,$824.00,google cloud,swe,24
+6556,$401.00,google cloud,hardware,9
+6230,$10000.00,unkown,marketing,27
+7760,$914.00,aws,marketing,23
+7104,$383.00,google cloud,marketing,14
+7929,$856.00,amazon,r&d,3
+3584,$195.00,google cloud,hardware,29
+9410,$679.00,aws,marketing,14
+4324,$560.00,aws,marketing,26
+2858,$373.00,testing,swe,15
+7728,$519.00,testing,swe,12
+3900,$520.00,amazon,marketing,26
+7228,$837.00,aws,hardware,20
+1877,$622.00,testing,marketing,15
+1187,$83.00,aws,hardware,2
+6637,$606.00,testing,marketing,28
+1114,$306.00,testing,hardware,18
+9186,$104.00,testing,marketing,6
+2395,$882.00,testing,marketing,14
+8270,$10000.00,unkown,swe,5
+3432,$76.00,aws,r&d,16
+304,$386.00,aws,r&d,12
+2993,$10000.00,unkown,r&d,4
+6021,$364.00,aws,hardware,25
+5501,$81.00,amazon,marketing,30
+5783,$452.00,aws,hardware,27
+2855,$924.00,testing,hardware,2
+1078,$828.00,aws,swe,6
+2326,$320.00,google cloud,swe,22
+9045,$840.00,testing,swe,13
+4122,$963.00,amazon,swe,1
+4441,$924.00,aws,hardware,26
+6940,$874.00,amazon,hardware,4
+50,$651.00,google cloud,r&d,8
+2580,$588.00,google cloud,swe,15
+6822,$10000.00,unkown,marketing,24
+7482,$470.00,aws,swe,6
+7004,$990.00,google cloud,marketing,11
+9228,$423.00,aws,marketing,13
+8596,$804.00,amazon,marketing,3
+6233,$873.00,amazon,hardware,10
+7491,$447.00,google cloud,swe,26
+5399,$362.00,google cloud,r&d,15
+5664,$390.00,amazon,r&d,23
+3960,$890.00,google cloud,hardware,15
+7852,$751.00,google cloud,r&d,12
+1412,$169.00,amazon,hardware,14
+1787,$198.00,testing,r&d,11
+6970,$189.00,google cloud,swe,28
+846,$349.00,amazon,hardware,16
+5219,$465.00,google cloud,marketing,8
+7332,$359.00,amazon,swe,29
+1305,$289.00,aws,hardware,29
+6397,$10000.00,unkown,hardware,17
+2964,$783.00,aws,marketing,25
+3587,$794.00,aws,r&d,23
+2345,$557.00,aws,swe,13
+3694,$448.00,aws,r&d,22
+9472,$10000.00,unkown,swe,1
+3295,$235.00,testing,hardware,28
+9667,$126.00,google cloud,swe,15
+6534,$66.00,amazon,swe,17
+4543,$152.00,testing,hardware,23
+1854,$838.00,testing,marketing,26
+7131,$990.00,aws,hardware,3
+1149,$745.00,amazon,r&d,11
+77,$193.00,aws,marketing,6
+8260,$817.00,aws,swe,15
+3629,$207.00,amazon,marketing,8
+5017,$383.00,aws,hardware,8
+7088,$747.00,testing,marketing,23
+8321,$680.00,google cloud,r&d,9
+8357,$459.00,aws,hardware,16
+4398,$770.00,google cloud,marketing,28
+9356,$775.00,amazon,marketing,6
+6777,$209.00,google cloud,r&d,26
+2946,$351.00,testing,r&d,18
+1352,$532.00,amazon,marketing,19
+2536,$858.00,aws,r&d,9
+5402,$476.00,testing,r&d,13
+2797,$898.00,testing,r&d,20
+3008,$240.00,amazon,hardware,7
+7353,$355.00,testing,r&d,7
+9400,$194.00,google cloud,r&d,6
+6847,$758.00,testing,r&d,15
+9858,$154.00,amazon,marketing,4
+8604,$196.00,testing,swe,26
+3490,$553.00,testing,hardware,18
+2568,$760.00,google cloud,hardware,24
+8756,$655.00,aws,marketing,4
+7313,$779.00,testing,swe,1
+8458,$591.00,amazon,swe,4
+8717,$809.00,aws,swe,4
+6378,$159.00,google cloud,hardware,13
+5817,$819.00,aws,marketing,1
+3439,$617.00,amazon,r&d,16
+589,$809.00,google cloud,marketing,10
+3774,$708.00,testing,r&d,26
+7615,$898.00,google cloud,r&d,18
+4959,$264.00,testing,swe,30
+5051,$300.00,google cloud,swe,14
+168,$985.00,google cloud,hardware,16
+1628,$683.00,google cloud,hardware,11
+2154,$982.00,amazon,swe,29
+1373,$904.00,aws,marketing,30
+8531,$52.00,google cloud,hardware,23
+6257,$340.00,amazon,r&d,8
+6088,$373.00,amazon,r&d,7
+6590,$10000.00,unkown,marketing,9
+5038,$869.00,amazon,hardware,21
+2536,$316.00,google cloud,marketing,15
+1749,$123.00,google cloud,r&d,3
+2203,$266.00,amazon,swe,21
+2707,$280.00,aws,marketing,29
+3547,$922.00,amazon,marketing,9
+1632,$10000.00,unkown,swe,18
+6140,$278.00,aws,marketing,17
+4044,$532.00,testing,marketing,22
+6690,$497.00,testing,marketing,11
+2592,$585.00,google cloud,r&d,27
+7417,$586.00,testing,hardware,19
+157,$652.00,google cloud,marketing,13
+771,$637.00,aws,marketing,1
+6273,$713.00,amazon,marketing,9
+6613,$212.00,google cloud,swe,7
+8693,$216.00,aws,swe,16
+9608,$55.00,google cloud,hardware,17
+2242,$417.00,aws,swe,25
+5803,$854.00,testing,hardware,28
+7686,$10000.00,unkown,r&d,7
+8276,$596.00,amazon,swe,1
+1171,$940.00,amazon,hardware,23
+212,$767.00,amazon,hardware,14
+1628,$526.00,testing,marketing,4
+6056,$129.00,testing,marketing,14
+3055,$939.00,aws,r&d,17
+6556,$293.00,testing,hardware,7
+6719,$697.00,google cloud,swe,19
+2549,$567.00,testing,hardware,5
+4407,$607.00,aws,marketing,17
+148,$828.00,amazon,marketing,25
+6280,$743.00,amazon,r&d,25
+7022,$10000.00,unkown,hardware,21
+1131,$206.00,testing,marketing,17
+7792,$787.00,amazon,r&d,5
+9489,$668.00,testing,swe,26
+2327,$286.00,aws,hardware,12
+2606,$999.00,testing,hardware,10
+6800,$840.00,amazon,r&d,5
+6140,$688.00,aws,hardware,4
+1021,$501.00,google cloud,swe,2
+2764,$634.00,testing,swe,6
+2180,$527.00,amazon,hardware,20
+8323,$620.00,testing,swe,11
+9094,$382.00,google cloud,marketing,18
+6636,$609.00,google cloud,r&d,30
+5756,$935.00,aws,r&d,24
+3225,$321.00,google cloud,r&d,26
+5275,$967.00,google cloud,hardware,23
+7776,$884.00,amazon,swe,23
+5970,$773.00,testing,hardware,25
+9010,$602.00,aws,hardware,28
+2851,$917.00,amazon,r&d,20
+1641,$996.00,google cloud,r&d,25
+5050,$69.00,aws,swe,7
+8863,$799.00,aws,hardware,27
+2861,$302.00,testing,r&d,1
+526,$569.00,google cloud,swe,17
+7615,$850.00,testing,r&d,27
+9211,$303.00,aws,marketing,30
+741,$751.00,aws,hardware,22
+9284,$943.00,aws,r&d,1
+343,$641.00,amazon,swe,22
+3365,$396.00,amazon,r&d,14
+4001,$329.00,amazon,marketing,19
+304,$415.00,google cloud,swe,17
+4365,$375.00,amazon,swe,28
+2294,$568.00,google cloud,hardware,4
+5580,$691.00,aws,marketing,9
+8907,$88.00,amazon,hardware,4
+998,$992.00,google cloud,swe,22
+4327,$520.00,aws,swe,19
+9713,$804.00,google cloud,r&d,26
+7975,$262.00,amazon,marketing,18
+7869,$542.00,google cloud,r&d,2
+2226,$473.00,amazon,hardware,28
+5426,$709.00,testing,r&d,28
+4082,$135.00,google cloud,r&d,24
+5079,$127.00,testing,r&d,1
+2134,$530.00,amazon,r&d,25
+3298,$394.00,aws,r&d,19
+3808,$242.00,amazon,swe,1
+6259,$644.00,testing,hardware,24
+8794,$599.00,amazon,marketing,17
+8836,$712.00,amazon,marketing,8
+8781,$123.00,testing,hardware,29
+9678,$109.00,testing,r&d,23
+2842,$794.00,aws,hardware,8
+150,$90.00,google cloud,swe,26
+3413,$691.00,aws,r&d,25
+1107,$310.00,google cloud,hardware,5
+1925,$269.00,google cloud,marketing,9
+904,$604.00,amazon,marketing,6
+921,$10000.00,unkown,marketing,21
+9922,$631.00,amazon,r&d,11
+7855,$118.00,google cloud,marketing,21
+9875,$88.00,google cloud,hardware,1
+3534,$111.00,amazon,swe,15
+8039,$921.00,aws,hardware,15
+8292,$327.00,amazon,swe,9
+2916,$477.00,amazon,hardware,21
+8961,$450.00,aws,r&d,23
+6412,$767.00,amazon,r&d,23
+3107,$745.00,testing,marketing,20
+2345,$837.00,google cloud,hardware,23
+644,$226.00,google cloud,marketing,10
+5644,$560.00,google cloud,swe,14
+6381,$64.00,testing,swe,8
+2433,$81.00,google cloud,hardware,21
+3862,$294.00,amazon,r&d,5
+8202,$10000.00,unkown,hardware,13
+2711,$366.00,google cloud,r&d,9
+5661,$192.00,aws,hardware,29
+5818,$944.00,amazon,r&d,4
+649,$70.00,amazon,hardware,24
+927,$624.00,testing,r&d,24
+2650,$595.00,aws,r&d,20
+9701,$746.00,google cloud,hardware,7
+2860,$993.00,amazon,hardware,8
+4413,$62.00,testing,marketing,26
+9613,$930.00,aws,swe,23
+5773,$285.00,aws,swe,1
+6907,$999.00,aws,marketing,29
+3120,$971.00,testing,hardware,12
+1384,$893.00,amazon,r&d,5
+3449,$286.00,amazon,r&d,19
+7372,$914.00,testing,r&d,14
+7424,$245.00,amazon,r&d,26
+3837,$333.00,aws,marketing,26
+2020,$253.00,testing,r&d,14
+3232,$416.00,testing,r&d,23
+2709,$343.00,amazon,marketing,7
+5727,$723.00,aws,swe,6
+6284,$295.00,amazon,marketing,22
+4161,$729.00,google cloud,swe,22
+7109,$832.00,testing,hardware,18
+1882,$53.00,google cloud,marketing,18
+885,$171.00,testing,swe,11
+5241,$10000.00,unkown,r&d,24
+3923,$774.00,aws,r&d,12
+1114,$141.00,aws,hardware,12
+8973,$506.00,testing,marketing,7
+7181,$443.00,google cloud,r&d,15
+5959,$699.00,google cloud,swe,24
+6159,$358.00,amazon,r&d,3
+3882,$638.00,amazon,swe,10
+4300,$10000.00,unkown,r&d,22
+5167,$975.00,testing,hardware,24
+6135,$331.00,testing,marketing,13
+2503,$163.00,aws,swe,8
+4101,$989.00,amazon,r&d,13
+9498,$303.00,testing,marketing,25
+4781,$987.00,aws,r&d,5
+8583,$981.00,testing,swe,18
+7448,$65.00,aws,marketing,29
+4258,$739.00,testing,swe,19
+5187,$179.00,google cloud,swe,11
+6206,$773.00,amazon,swe,30
+1598,$668.00,amazon,marketing,5
+4288,$10000.00,unkown,r&d,16
+4445,$1000.00,google cloud,hardware,1
+9295,$778.00,amazon,r&d,29
+4867,$636.00,google cloud,swe,21
+7576,$898.00,amazon,marketing,24
+6466,$411.00,amazon,hardware,9
+3682,$727.00,google cloud,r&d,30
+8532,$93.00,testing,marketing,27
+8630,$369.00,google cloud,marketing,4
+1090,$992.00,google cloud,hardware,4
+6147,$432.00,amazon,swe,18
+2909,$985.00,amazon,hardware,22
+5580,$10000.00,unkown,marketing,9
+9591,$885.00,amazon,r&d,10
+2969,$280.00,aws,marketing,27
+3058,$871.00,aws,r&d,20
+9240,$60.00,google cloud,hardware,13
+8489,$227.00,aws,hardware,9
+498,$301.00,google cloud,r&d,10
+3297,$737.00,aws,marketing,25
+847,$800.00,google cloud,marketing,3
+9264,$593.00,amazon,swe,17
+7757,$506.00,amazon,swe,20
+7598,$138.00,testing,r&d,26
+4629,$507.00,google cloud,r&d,9
+9118,$913.00,testing,marketing,13
+7873,$428.00,aws,r&d,22
+6149,$235.00,testing,marketing,5
+6337,$239.00,google cloud,r&d,28
+7632,$472.00,google cloud,hardware,27
+6220,$10000.00,unkown,hardware,25
+2304,$177.00,amazon,r&d,4
+8583,$470.00,google cloud,r&d,1
+7071,$357.00,testing,hardware,25
+1874,$178.00,amazon,hardware,16
+3714,$880.00,google cloud,marketing,22
+9639,$788.00,google cloud,swe,25
+2717,$88.00,aws,swe,9
+9039,$803.00,testing,r&d,3
+1753,$869.00,testing,marketing,22
+385,$135.00,google cloud,marketing,21
+3253,$664.00,amazon,r&d,27
+2563,$744.00,aws,r&d,13
+907,$874.00,testing,marketing,18
+2078,$382.00,google cloud,marketing,17
+8207,$146.00,aws,hardware,17
+8569,$630.00,aws,hardware,25
+9789,$803.00,google cloud,r&d,6
+3374,$477.00,testing,hardware,15
+754,$657.00,aws,swe,19
+1378,$295.00,testing,hardware,30
+5197,$738.00,google cloud,hardware,13
+5338,$506.00,google cloud,r&d,28
+4805,$390.00,google cloud,swe,22
+1019,$10000.00,unkown,hardware,8
+8911,$585.00,google cloud,r&d,17
+309,$219.00,amazon,swe,14
+7508,$107.00,testing,swe,21
+6309,$893.00,testing,marketing,5
+7780,$624.00,aws,r&d,11
+9571,$500.00,aws,marketing,21
+8666,$365.00,google cloud,swe,15
+9885,$703.00,testing,hardware,6
+6793,$935.00,amazon,marketing,12
+9449,$682.00,testing,swe,24
+8155,$236.00,testing,swe,9
+3866,$258.00,google cloud,r&d,20
+5735,$266.00,testing,hardware,2
+3282,$934.00,aws,hardware,15
+6731,$10000.00,unkown,marketing,17
+3479,$580.00,google cloud,hardware,29
+5002,$952.00,testing,marketing,15
+2059,$837.00,aws,r&d,19
+7290,$537.00,amazon,swe,20
+3932,$711.00,google cloud,r&d,23
+2761,$931.00,google cloud,swe,8
+2124,$882.00,google cloud,r&d,5
+1385,$543.00,google cloud,hardware,23
+6869,$256.00,aws,marketing,18
+8037,$614.00,testing,r&d,20
+8462,$542.00,aws,hardware,25
+6730,$160.00,amazon,r&d,7
+6721,$10000.00,unkown,marketing,8
+5188,$881.00,testing,r&d,1
+1115,$985.00,amazon,swe,29
+9825,$935.00,aws,swe,6
+1202,$323.00,testing,swe,10
+8282,$925.00,testing,marketing,21
+3591,$275.00,aws,swe,4
+2056,$929.00,aws,swe,9
+7843,$204.00,amazon,marketing,16
+3817,$503.00,aws,marketing,3
+2501,$738.00,google cloud,swe,9
+2036,$149.00,testing,r&d,7
+1431,$916.00,aws,marketing,8
+7954,$380.00,google cloud,hardware,2
+4281,$707.00,aws,marketing,8
+737,$591.00,testing,r&d,29
+5843,$972.00,amazon,marketing,10
+9851,$131.00,amazon,swe,13
+5225,$879.00,amazon,marketing,2
+1356,$247.00,google cloud,r&d,21
+390,$549.00,amazon,r&d,9
+3397,$694.00,amazon,swe,12
+6403,$737.00,testing,r&d,9
+6168,$675.00,amazon,hardware,19
+8191,$118.00,google cloud,hardware,23
+5677,$457.00,amazon,swe,7
+2737,$510.00,testing,r&d,25
+6720,$610.00,google cloud,marketing,2
+4164,$897.00,aws,swe,22
+2785,$341.00,testing,marketing,3
+8340,$10000.00,unkown,swe,12
+4021,$862.00,aws,marketing,30
+1196,$806.00,testing,hardware,2
+8702,$485.00,google cloud,hardware,23
+6886,$550.00,testing,hardware,3
+6648,$699.00,testing,swe,21
+8367,$87.00,google cloud,marketing,17
+6939,$10000.00,unkown,hardware,17
+1625,$637.00,testing,hardware,9
+5174,$870.00,google cloud,marketing,14
+5294,$463.00,testing,r&d,6
+4625,$517.00,aws,swe,28
+4392,$744.00,google cloud,r&d,12
+1519,$869.00,google cloud,swe,20
+5462,$10000.00,unkown,hardware,17
+724,$673.00,amazon,r&d,5
+5034,$338.00,testing,marketing,18
+3907,$881.00,testing,swe,27
+6004,$375.00,aws,swe,25
+3855,$232.00,aws,marketing,16
+1563,$518.00,aws,hardware,24
+8185,$438.00,aws,r&d,5
+9080,$786.00,aws,swe,12
+6738,$268.00,amazon,marketing,27
+5776,$447.00,google cloud,swe,26
+7176,$427.00,amazon,hardware,3
+3162,$437.00,google cloud,hardware,7
+744,$10000.00,unkown,hardware,27
+8918,$140.00,aws,swe,19
+7692,$762.00,amazon,swe,6
+7591,$453.00,aws,swe,21
+1932,$590.00,testing,marketing,3
+3467,$511.00,testing,marketing,20
+118,$827.00,google cloud,marketing,20
+9255,$529.00,testing,hardware,20
+7032,$60.00,testing,hardware,11
+5688,$509.00,google cloud,swe,28
+7604,$10000.00,unkown,swe,2
+9541,$186.00,testing,hardware,7
+965,$185.00,amazon,r&d,28
+1884,$339.00,amazon,r&d,28
+772,$688.00,amazon,r&d,25
+315,$206.00,amazon,swe,3
+8726,$590.00,amazon,hardware,13
+969,$414.00,google cloud,r&d,21
+7856,$997.00,google cloud,swe,28
+3300,$674.00,testing,marketing,30
+2712,$862.00,aws,swe,13
+9585,$488.00,aws,swe,21
+9893,$276.00,aws,r&d,24
+4467,$315.00,aws,swe,4
+1728,$150.00,testing,swe,14
+6483,$990.00,aws,hardware,11
+8231,$70.00,google cloud,marketing,22
+5553,$264.00,aws,swe,9
+7593,$891.00,testing,r&d,12
+8634,$667.00,google cloud,r&d,9
+4214,$856.00,testing,hardware,26
+1459,$739.00,google cloud,hardware,26
+7022,$102.00,google cloud,hardware,13
+9473,$188.00,aws,r&d,23
+4542,$382.00,amazon,hardware,26
+2819,$861.00,google cloud,swe,23
+8150,$582.00,amazon,r&d,12
+6618,$228.00,amazon,marketing,18
+3211,$547.00,aws,swe,14
+7086,$734.00,testing,marketing,1
+746,$538.00,aws,hardware,16
+7379,$242.00,testing,r&d,9
+1883,$302.00,aws,marketing,12
+7111,$862.00,aws,marketing,15
+7332,$443.00,testing,swe,24
+1752,$539.00,testing,marketing,21
+9126,$156.00,amazon,marketing,13
+9381,$565.00,aws,marketing,16
+7022,$991.00,testing,hardware,23
+5356,$818.00,google cloud,hardware,24
+5493,$492.00,aws,marketing,17
+7298,$803.00,google cloud,r&d,13
+9941,$60.00,google cloud,swe,24
+9887,$160.00,google cloud,marketing,11
+5153,$10000.00,unkown,marketing,12
+2353,$933.00,aws,marketing,29
+3532,$570.00,testing,swe,2
+991,$516.00,aws,marketing,21
+2550,$420.00,testing,marketing,9
+2978,$722.00,amazon,hardware,9
+2606,$636.00,testing,r&d,14
+6326,$446.00,aws,swe,19
+8011,$796.00,testing,swe,14
+1147,$506.00,amazon,marketing,9
+2785,$258.00,testing,r&d,24
+201,$242.00,google cloud,marketing,6
+2388,$10000.00,unkown,hardware,4
+788,$10000.00,unkown,r&d,30
+9846,$97.00,aws,marketing,14
+9767,$66.00,google cloud,r&d,26
+8325,$152.00,testing,hardware,18
+3163,$665.00,aws,swe,13
+6850,$570.00,testing,hardware,14
+8747,$620.00,aws,marketing,23
+5760,$477.00,amazon,hardware,17
+3291,$298.00,aws,hardware,18
+751,$761.00,amazon,r&d,16
+8032,$351.00,google cloud,r&d,6
+3219,$211.00,google cloud,hardware,3
+9769,$993.00,aws,swe,5
+751,$783.00,testing,r&d,14
+1515,$772.00,testing,marketing,3
+9944,$358.00,google cloud,r&d,21
+2030,$161.00,testing,swe,18
+7118,$346.00,amazon,marketing,29
+9274,$446.00,testing,r&d,18
+3834,$672.00,amazon,marketing,27
+9806,$722.00,aws,marketing,26
+5559,$652.00,aws,marketing,15
+2976,$203.00,aws,r&d,1
+8316,$169.00,testing,hardware,18
+3064,$433.00,amazon,hardware,10
+1668,$839.00,testing,r&d,4
+7071,$491.00,testing,hardware,3
+3625,$937.00,amazon,swe,28
+9164,$763.00,google cloud,marketing,22
+7495,$370.00,aws,swe,26
+7492,$470.00,aws,hardware,11
+8158,$352.00,google cloud,marketing,14
+5038,$723.00,amazon,r&d,16
+6145,$465.00,aws,hardware,11
+2050,$10000.00,unkown,hardware,23
+7605,$139.00,testing,marketing,6
+4334,$673.00,google cloud,r&d,2
+748,$287.00,aws,hardware,20
+7584,$589.00,amazon,marketing,2
+9457,$730.00,amazon,swe,10
+331,$742.00,aws,swe,2
+561,$428.00,testing,marketing,14
+8217,$164.00,testing,r&d,27
+2729,$276.00,testing,r&d,2
+8332,$633.00,aws,marketing,8
+7736,$123.00,google cloud,swe,4
+6168,$823.00,amazon,hardware,14
+9605,$978.00,google cloud,swe,6
+1379,$968.00,testing,r&d,13
+7741,$700.00,aws,marketing,1
+5522,$298.00,aws,hardware,20
+6848,$960.00,google cloud,swe,5
+5665,$497.00,google cloud,hardware,11
+6112,$504.00,testing,marketing,17
+6591,$617.00,google cloud,swe,14
+5568,$582.00,google cloud,swe,4
+1931,$359.00,testing,r&d,26
+3140,$86.00,google cloud,r&d,11
+9859,$140.00,aws,swe,3
+6485,$229.00,aws,hardware,16
+6583,$251.00,google cloud,hardware,16
+5718,$558.00,google cloud,r&d,16
+7174,$850.00,google cloud,marketing,29
+7214,$419.00,google cloud,hardware,5
+1471,$63.00,testing,r&d,26
+1060,$921.00,testing,hardware,14
+3312,$234.00,testing,hardware,4
+4233,$916.00,testing,r&d,15
+5723,$477.00,aws,marketing,26
+9782,$471.00,google cloud,marketing,22
+3839,$309.00,testing,swe,28
+5559,$131.00,testing,swe,25
+7606,$774.00,aws,r&d,15
+7474,$234.00,aws,hardware,28
+1238,$371.00,google cloud,r&d,6
+6126,$972.00,amazon,hardware,20
+9254,$884.00,google cloud,marketing,26
+593,$844.00,testing,hardware,1
+3338,$888.00,testing,hardware,2
+4299,$246.00,google cloud,marketing,17

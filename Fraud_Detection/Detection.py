@@ -21,11 +21,23 @@ data["sector in company"] = le_sector.fit_transform(data["sector in company"])
 
 X = data[["Transaction id", "amount", "merchant id", "sector in company", "day in month"]]
 
+features_to_scale = ["amount", "day in month"]
+scaler = StandardScaler()
+scaler.fit(data[features_to_scale])
+scaler.fit(data[features_to_scale])
+data_scaled = pd.concat([data[["Transaction id", "merchant id", "sector in company"]], 
+                         pd.DataFrame(scaler.transform(data[features_to_scale]))], 
+                         axis=1) 
+
+
+
 # Split data
 X_train, X_test = train_test_split(X, test_size=0.2, random_state=42)
 
+
+
 # Define and train Isolation Forest model
-model = IsolationForest(n_estimators=200, max_samples='auto', contamination=0.03, random_state=42)
+model = IsolationForest(n_estimators=200, max_samples='auto', contamination=0.05, random_state=42)
 model.fit(X_train)
 
 # Predict outliers on testing data
@@ -60,8 +72,13 @@ new_transaction_encoded = new_transaction[["Transaction id", "amount", "merchant
 
 new_prediction = model.predict(new_transaction_encoded)
 new_score = model.decision_function(new_transaction_encoded)
-print(new_score)
+#print(new_score)
 
 
+#positive_scores = pd.DataFrame({'Transaction id': new_transaction_encoded['Transaction id'][new_score > 0], 'Anomaly Score': new_score[new_score > 0]})
+negative_scores = pd.DataFrame({'Transaction id': new_transaction_encoded['Transaction id'][new_score <= 0], 'Anomaly Score': new_score[new_score <= 0]})
 
+# Print results (adjust based on your needs)
+print("Transactions with negative anomaly scores (likely fraudulent:")
+print(negative_scores['Transaction id'].to_string(index=False))
 
