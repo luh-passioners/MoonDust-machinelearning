@@ -11,6 +11,14 @@ from sklearn.preprocessing import LabelEncoder
 data = pd.read_csv("transaction_data.csv") # swap it out with database for actual implementation
 data["amount"] = data["amount"].str.replace("$", "").astype(float)
 
+# Create LabelEncoder objects for each categorical column
+le_merchant_id = LabelEncoder()
+le_sector = LabelEncoder()
+
+# Encode the categorical columns
+data["merchant id"] = le_merchant_id.fit_transform(data["merchant id"])
+data["sector in company"] = le_sector.fit_transform(data["sector in company"])
+
 X = data[["Transaction id", "amount", "merchant id", "sector in company", "day in month"]]
 
 # Split data
