@@ -27,6 +27,6 @@ with open('/Users/marvinlin/Python-Learning/transaction_data.csv', mode='w', new
         if random.random() < 0.05:  # 5% chance of an outlier
             # Outlier examples (modify these for your specific use case)
             data[1] = '$10000.00'  # High amount outlier
-            data[4] = '-1'  # Unknown merchant outlier
+            data[2] = 'unkown'  # Unknown merchant outlier
 
         writer.writerow(data)
