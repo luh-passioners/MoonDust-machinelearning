@@ -31,7 +31,6 @@ def main():
     end_date = datetime.now().strftime('%Y-%m-%d')
 
     prices = get_stock_prices(symbol, start_date, end_date)
-    print(prices)
     for point in prices:
         print(point)
 
