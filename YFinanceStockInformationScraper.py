@@ -306,7 +306,7 @@ def calculate_stochastic_oscillator(ticker_symbol, period=14, smoothing=3):
 
 
 
-
+# printing stock info used towards testing. 
 def print_stock_info(ticker_symbol):
     """
     Print financial metrics for a given stock ticker symbol.
