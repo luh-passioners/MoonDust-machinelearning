@@ -354,5 +354,5 @@ def get_technical_score(ticker_symbol):
     
     if 20 < calculate_stochastic_oscillator(ticker_symbol) < 80:
         technicalScore += 1
-
+    
     return (technicalScore - 2.5) / 2.5
