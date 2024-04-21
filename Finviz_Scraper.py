@@ -5,10 +5,11 @@ from Summerizer import summerizer
 from keys import CLAUDE_API_KEY
 from bs4 import BeautifulSoup
 from IBD50_Tickers import get_tickers
+from newspaper import Article
 
 
+"""Scrapes news data from finviz.com"""
 class NewsScraper:
-    """Scrapes news data from finviz.com"""
 
     def __init__(self, tickers):
         self.tickers = tickers
@@ -16,8 +17,9 @@ class NewsScraper:
         self.context = ssl._create_unverified_context()
         self.user_agent = {'user-agent': 'my-app'}
 
+
+    """Scrapes news data for each ticker"""
     def scrape_news(self):
-        """Scrapes news data for each ticker"""
         finviz_url = 'https://finviz.com/quote.ashx?t='
         for ticker in self.tickers:
             url = finviz_url + ticker
@@ -32,9 +34,8 @@ class NewsScraper:
                 print("Error fetching data for ticker", ticker)
                 print(e)
 
-
+"""Parses scraped news data"""
 class NewsParser:
-    """Parses scraped news data"""
 
     def __init__(self, news_data):
         self.news_data = news_data
@@ -60,35 +61,41 @@ class NewsParser:
         return sorted_news_data, ticker_links
 
 
+"""Filters out unwanted elements from text extraction"""
 def tag_visible(element):
-    """Filters out unwanted elements from text extraction"""
     if element.parent.name in ['style', 'script', 'head', 'title', 'meta', '[document]']:
         return False
     return True
 
-
+"""Extracts visible text from HTML content"""
 def text_from_html(body):
-    """Extracts visible text from HTML content"""
     soup = BeautifulSoup(body, 'html.parser')
     texts = soup.findAll(string=True)
     visible_texts = filter(tag_visible, texts)
     return u" ".join(t.strip() for t in visible_texts)
 
 
+"""Fetches news content and performs sentiment analysis"""
 def analyze_news(ticker_links):
-    """Fetches news content and performs sentiment analysis"""
     text = set()
     content_string = []
     for ticker in ticker_links:
         for link in ticker_links[ticker]:
-            text.add(link)
-            ticker_link = link
-            html = Request(url=ticker_link, headers={'user-agent': 'my-app'})
+            
             try:
+                article = Article(link)
+                article.download()
+                article.parse()
+                content_string.append(article.text)
+                text.add(link)
+                ticker_link = link
+                html = Request(url=ticker_link, headers={'user-agent': 'my-app'})
+                """"
                 response = urlopen(html, context=ssl._create_unverified_context())
                 content = response.read()
                 content = text_from_html(content)
                 content_string.append(content)
+                """
             except Exception as e:
                 print("Error fetching data for ticker", ticker)
                 print(e)
@@ -101,7 +108,7 @@ def analyze_news(ticker_links):
         
         print(ticker, sum/count)
 
-# Usage
+
 tickers = get_tickers()
 
 scraper = NewsScraper(tickers)
