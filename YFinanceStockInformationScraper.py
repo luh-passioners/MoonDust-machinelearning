@@ -2,11 +2,7 @@ import yfinance as yf
 import numpy as np
 from IBD50_Tickers import get_tickers
 
-stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
-
-def __init__(self):
-    # Call get_tickers from Class1 to get the list of tickers
-    self.stock_tickers = get_tickers()
+# stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
 
 stock_tickers = get_tickers()
 
@@ -82,8 +78,6 @@ def get_50_day_sma(ticker_symbol):
     else:
         return round(sma_50.iloc[-1], 2)
 
-
-
 def get_sales_last_quarter(ticker_symbol):
     """
     Get the Sales % last quarter for a given stock ticker symbol.
@@ -107,8 +101,6 @@ def get_sales_last_quarter(ticker_symbol):
     
     return round(sales_last_qtr, 2) if isinstance(sales_last_qtr, float) else 0  # Return 0 if sales_last_qtr is None or not a float
 
-
-
 def get_roe(ticker_symbol):
     """
     Get the Return on Equity (ROE) for a given stock ticker symbol.
@@ -130,7 +122,6 @@ def get_roe(ticker_symbol):
         return 0
     else:
         return round(float(roe), 2)
-
 
 def get_profit_margin(ticker_symbol):
     """
@@ -154,7 +145,6 @@ def get_profit_margin(ticker_symbol):
     else:
         return round(float(profit_margin) * 100, 2)
 
-
 def get_pe_ratio(ticker_symbol):
     """
     Get the Price-to-Earnings (P/E) ratio for a given stock ticker symbol.
@@ -177,7 +167,6 @@ def get_pe_ratio(ticker_symbol):
     else:
         return round(float(pe_ratio), 2)
 
-
 def get_eps(ticker_symbol):
     """
     Get the Earnings Per Share (EPS) for a given stock ticker symbol.
@@ -199,7 +188,6 @@ def get_eps(ticker_symbol):
         return 0
     else:
         return round(float(eps), 2)
-
 
 def get_rsi(ticker_symbol, period=14):
     """
@@ -303,9 +291,6 @@ def calculate_stochastic_oscillator(ticker_symbol, period=14, smoothing=3):
         print(f"Error calculating Stochastic Oscillator for {ticker_symbol}: {e}")
         return 0
 
-
-
-
 # printing stock info used towards testing. 
 def print_stock_info(ticker_symbol):
     """
@@ -332,21 +317,8 @@ def print_stock_info(ticker_symbol):
     print("Stochastic Oscillator", calculate_stochastic_oscillator(ticker_symbol))
     print("\n")
 
-
-
-# Initialize a dictionary to store stock scores
-stock_scores = {}
-
-# Iterate through each ticker and calculate score
-for ticker_symbol in stock_tickers:
+def get_fundamental_score(ticker):
     fundamentalScore = 0
-    technicalScore = 0
-
-    if calculate_current_price(ticker_symbol) > get_20_day_sma(ticker_symbol):
-        technicalScore += 1
-    
-    if calculate_current_price(ticker_symbol) > get_50_day_sma(ticker_symbol):
-        technicalScore += 1
     
     if get_sales_last_quarter(ticker_symbol) > 0:
         fundamentalScore += 1
@@ -362,7 +334,18 @@ for ticker_symbol in stock_tickers:
     
     if get_eps(ticker_symbol) > 0:
         fundamentalScore += 1
+
+    return (fundamentalScore - 2.5) / 2.5
+
+def get_technical_score(ticker_symbol):
+    technicalScore = 0
+
+    if calculate_current_price(ticker_symbol) > get_20_day_sma(ticker_symbol):
+        technicalScore += 1
     
+    if calculate_current_price(ticker_symbol) > get_50_day_sma(ticker_symbol):
+        technicalScore += 1
+
     if 30 < get_rsi(ticker_symbol) < 70:
         technicalScore += 1
     
@@ -371,25 +354,5 @@ for ticker_symbol in stock_tickers:
     
     if 20 < calculate_stochastic_oscillator(ticker_symbol) < 80:
         technicalScore += 1
-    
-    # Assign the scores to the ticker symbol
-    stock_scores[ticker_symbol] = {
-        'Technical Score': technicalScore,
-        'Fundamental Score': fundamentalScore
-    }
 
-# Sort the stock_scores dictionary by fundamental score in descending order
-sorted_fundamental_scores = sorted(stock_scores.items(), key=lambda x: x[1]['Fundamental Score'], reverse=True)
-
-# Print the sorted stock scores by fundamental score
-print("Sorted Stock Scores by Fundamental Score:")
-for ticker_symbol, scores in sorted_fundamental_scores:
-    print(ticker_symbol, ":", (scores['Fundamental Score'] - 2.5) / 2.5)
-
-# Sort the stock_scores dictionary by technical score in descending order
-sorted_technical_scores = sorted(stock_scores.items(), key=lambda x: x[1]['Technical Score'], reverse=True)
-
-# Print the sorted stock scores by technical score
-print("\nSorted Stock Scores by Technical Score:")
-for ticker_symbol, scores in sorted_technical_scores:
-    print(ticker_symbol, ":", (scores['Technical Score'] - 2.5) / 2.5)
+    return (technicalScore - 2.5) / 2.5
