@@ -1,10 +1,10 @@
 import yfinance as yf
 import numpy as np
-from IBD50_Tickers import get_tickers
+# from IBD50_Tickers import get_tickers
 
 # stock_tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "TSLA"]
 
-stock_tickers = get_tickers()
+# stock_tickers = get_tickers()
 
 def calculate_current_price(ticker_symbol):
     """
