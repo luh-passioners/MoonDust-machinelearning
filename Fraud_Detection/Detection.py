@@ -21,11 +21,23 @@ data["sector in company"] = le_sector.fit_transform(data["sector in company"])
 
 X = data[["Transaction id", "amount", "merchant id", "sector in company", "day in month"]]
 
+features_to_scale = ["amount", "day in month"]
+scaler = StandardScaler()
+scaler.fit(data[features_to_scale])
+scaler.fit(data[features_to_scale])
+data_scaled = pd.concat([data[["Transaction id", "merchant id", "sector in company"]], 
+                         pd.DataFrame(scaler.transform(data[features_to_scale]))], 
+                         axis=1) 
+
+
+
 # Split data
 X_train, X_test = train_test_split(X, test_size=0.2, random_state=42)
 
+
+
 # Define and train Isolation Forest model
-model = IsolationForest(n_estimators=200, max_samples='auto', contamination=0.03, random_state=42)
+model = IsolationForest(n_estimators=200, max_samples='auto', contamination=0.05, random_state=42)
 model.fit(X_train)
 
 # Predict outliers on testing data
